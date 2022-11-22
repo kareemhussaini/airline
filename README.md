@@ -5,14 +5,14 @@ Datbase Management Systems
 --> Install Mysql
 
 --> Install Dependencies
- # npm install express ejs
- # npm install nodemon --save-dev
- # npm install mysql
- # npm install bootstrap@5.2.2
- # npm install express-handlebars
- # npm install dotenv
- # npm install body-parser
- # npm install -g express-generator
+ ###### npm install express ejs
+ ###### npm install nodemon --save-dev
+ ###### npm install mysql
+ ###### npm install bootstrap@5.2.2
+ ###### npm install express-handlebars
+ ###### npm install dotenv
+ ###### npm install body-parser
+ ###### npm install -g express-generator
  
 --> Create user identified by some password to access the airline database and run the commands provided in the Mysql.sql file
 
