@@ -1,0 +1,66 @@
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700");
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color:#c8e8e9;
+}
+*:hover {
+  -webkit-transition: all 1s ease;
+  transition: all .5s ease;
+}
+section {
+  float: left;
+  width: 100%;
+  background: #c8e8e9; /* fallback for old browsers */
+  padding: 30px 5px;
+}
+h1 {
+  float: left;
+  width: 100%;
+  color: #232323;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+h1 span {
+  font-family: "Libre Baskerville", serif;
+  display: block;
+  font-size: 40px;
+  text-transform: none;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-weight: 700;
+}
+/* .card-image-1{
+    width: 100%;
+    height: 200%;
+
+} */
+.card-title{
+    font-size: 27px;
+    color: #000;
+}
+
+.profile-card-1 .background{
+  width: 100%;
+  vertical-align: top;
+  opacity: 0.8;
+  filter: blur(2px);
+  transform: scale(3);  
+ }
+ .profile-card-4,.profile-card-5,.profile-card-6 {
+    margin-top: 20px;
+ }
+ .profile-card-5{
+    height: 140%;
+ }
+
+.btn {
+  background: #120E43;
+  border: none;
+  border-radius: 12px;
+}
+
+.card {
+  box-shadow: 1px 1px 15px #000;
+}

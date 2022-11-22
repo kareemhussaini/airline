@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | The Internet Airlines</title>
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Fontawesome CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <script>
+    $(function () {
+      $('#header').load("header")
+    })
+  </script>
+
+</head>
+
+<body>
+  <div id="header"></div>
+  <div class="body">
+    <div class="container">
+      <div class="content">
+        <div class="left-side">
+          <div class="address details">
+            <i class="fas fa-map-marker-alt"></i>
+            <div class="topic">Address</div>
+            <div class="text-one">610 Purdue Mall</div>
+            <div class="text-two">West Lafayette</div>
+            <div class="text-three">IN 47907, USA</div>
+          </div>
+          <div class="phone details">
+            <i class="fas fa-phone-alt"></i>
+            <div class="topic">Phone</div>
+            <div class="text-two">+1(331) 243-5459</div>
+            <div class="text-one">+1(708) 573-0971</div>
+          </div>
+          <div class="email details">
+            <i class="fas fa-envelope"></i>
+            <div class="topic">Email</div>
+            <div class="text-one">syedkareemhussaini76@gmail.com</div>
+            <div class="text-two">skareem4@gmail.com</div>
+          </div>
+        </div>
+        <div class="right-side">
+          <div class="topic-text">Send us a message</div>
+          <p>If you have any types of quries related to our services and flight details, you can send me a message from
+            here. It's my pleasure to help you.</p>
+          <form action="mailto: syedkareemhussaini76@gmail.com" method="post" enctype="text/plain">
+            <div class="input-box">
+              <input type="text" placeholder="Enter your name">
+            </div>
+            <div class="input-box">
+              <input type="text" placeholder="Enter your email">
+            </div>
+            <div class="input-box message-box">
+              <textarea placeholder="Enter your message"></textarea>
+            </div>
+            <div class="button">
+              <input type="button" value="Send Now">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.limiter{
+  width: 100%;
+  margin: 0 auto;
+}
+.container-signup{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wrap-signup{
+  width: 680px;
+  background: #fff;
+  border-radius: 12px;
+  position: relative;
+  padding: 50px;
+}
+.create-account{
+  width: 100%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.login-form-title{
+  width: 100%;
+  display: block;
+  font-size: 40px;
+  color: #555555;
+  line-height: 1.1;
+  text-align: center;
+  cursor: pointer;
+}
+.name{
+  position: relative;
+  left: 30px;
+  width: 300px;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border-radius: 8px;
+  outline: 0;
+  background-color:#fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.input{
+  position: relative;
+  left: 60px;
+  width: 300px;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border-radius: 8px;
+  outline: 0;
+  background-color:#fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+.pass{
+  position: relative;
+  left: 31px;
+  width: 300px;
+  padding: 8px;
+  font-size: 18px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  border-radius: 8px;
+  outline: 0;
+  background-color:#fff;
+  border: 1px solid #ddd;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+}
+a{
+  color: #fff;
+}
+label{
+  margin: 3px;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: normal;
+  text-decoration: dashed;
+  cursor: pointer;
+}
+i{
+  margin-right: 3px;
+}
+/* i .eye{
+  z-index: 1000;
+} */

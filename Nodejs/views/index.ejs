@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/searchFlight.css">
+    <title>Home Page | The Internet Airlines</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function () {
+            $('#header').load("header")
+        })
+    </script>
+</head>
+
+<body>
+    <div id="header"></div>
+    <div class="content">
+        <div class="heading-section">
+            <h1 class="heading">Welcome to The Internet Airline.......!!!!!!</h1>
+        </div>
+        <form action="/auth" method="post">
+        <div class="flight-search-section">
+            <div class="search-container">
+                <div>
+                    <h2 class="title">Search Flights</h2>
+                </div>
+                <div class="origin" >
+                    <span>Select Origin:</span>
+                    <select name="origin" id="origin" oninput="vaidateOD()">
+                        <option value="" disabled selected value> -- select an option -- </option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New York">New York</option>
+                        <option value="California">California</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Massechusets">Massechusets</option>
+                        <option value="Ohio">Ohio</option>
+                    </select>
+                </div>
+
+                <div class="destination" >
+                    <span>Select Destination:</span>
+                    <select name="destination" id="destination" oninput="vaidateOD()">
+                        <option value="" disabled selected value> -- select an option -- </option>
+                        <option value="Chicago">Chicago</option>
+                        <option value="Arizona">Arizona</option>
+                        <option value="Texas">Texas</option>
+                        <option value="New York">New York</option>
+                        <option value="California">California</option>
+                        <option value="Seattle">Seattle</option>
+                        <option value="Washington">Washington</option>
+                        <option value="Oregon">Oregon</option>
+                        <option value="Kentucky">Kentucky</option>
+                        <option value="Illinois">Illinois</option>
+                        <option value="Cincinnati">Cincinnati</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Diego">San Diego</option>
+                        <option value="Boston">Boston</option>
+                        <option value="Michigan">Michigan</option>
+                        <option value="Massechusets">Massechusets</option>
+                        <option value="Ohio">Ohio</option>
+                    </select>
+                </div>
+                <div class="radio-btn" required>
+                    <span>
+                        <label for="">Trips:</label>&nbsp;&nbsp;
+                        <input type="radio" name="trip" class="check-box" id="trip"
+                            required>&nbsp;<span>One-way</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <input type="radio" name="trip" class="check-box" id="trip">&nbsp;<span>Round-trip &nbsp;
+                            (40%off)</span>
+                </div>
+                <div class="air-class" required>
+                    <label for="">Select Class: &nbsp;&nbsp;</label>
+                    <select id="classsection" name="class_preference" >
+                        <option value="First-class">First class</option>
+                        <option value="Business-class">Business</option>
+                        <option value="Economy-class" selected>Economy</option>
+                        <option value="Economy-class">Premium Economy</option>
+                    </select>
+                </div>
+                <div class="dates" required>
+                    <label for="start">Departure:</label>
+                    <input type="date" id="start" name="trip-start" value="" oninput="validDate(this.value, this)" max="2023-12-31"
+                        class="depart-date">
+                </div>
+                <div class="dates" required>
+                    <label for="return">Return:</label>
+                    <input type="date" id="return" name="trip-start" value="" oninput="validateDate(this)"
+                        max="2023-12-31" class="return-date">
+                </div>
+                <div class="btn">
+                    <a href="departure">
+                        <button class="search" type="submit" onclick="validateOD()">Search</button>
+                    </a>
+                    <button class="reset" type="reset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+    <script>
+        function validDate(date, theInput) {
+            var date = document.getElementById("start").value;
+            todayDate = getTodaysDate();
+            if (date < todayDate)                
+                alert("Departure date cannot be less than today's date")
+                //theInput.value = todayDate;
+        }
+
+        function validateDate(theInput) {
+            var sdate = document.getElementById("start").value;
+            var rdate = document.getElementById("return").value;
+            todayDate = getTodaysDate();
+            if (sdate > rdate)
+                alert("Please select the appropriate dates");
+                //theInput.value = todayDate;
+        }
+
+        function validateOD(){
+            var origin = document.getElementById("origin").value;
+            var destination = document.getElementById("destination").value;
+            if (destination == "" || origin==""){
+                alert("Select Value")
+            }
+
+            if (destination == origin){
+                alert("Origin and Destination cannot be same")
+            }
+        }
+
+        function getTodaysDate() {
+            date = new Date();
+            day = date.getDate();
+            month = date.getMonth() + 1;
+            year = date.getFullYear();
+
+            if (month < 10) month = "0" + month;
+            if (day < 10) day = "0" + day;
+
+            today = year + "-" + month + "-" + day;
+
+            return today;
+        }
+    </script>
+</body>
+
+</html>

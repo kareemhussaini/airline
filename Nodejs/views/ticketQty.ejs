@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticketQty</title>
+
+     <!-- Required meta tags -->
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+ 
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/ticketQty.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <script
+  src="https://code.jquery.com/jquery-3.6.1.min.js"
+  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+  crossorigin="anonymous"></script>
+
+  <script>
+    $(function() {
+        $('#header').load("header")
+    })
+  </script>
+
+</head>
+<body>
+    <div id="header"></div>
+    <section>
+      <div class="container">
+          <h3 margin-top-5>Welcome to Airlines</h3>
+          <h6 class="p1">Would to like to purchase the tickets</h6>
+          <div class="details">
+              <div class="arrival">
+                  <div class="origin">
+                      <span>Select Origin:</span>
+                      <select name="origin" id="origin">
+                          <option value="Chicago">Chicago</option>
+                          <option value="Texas">Texas</option>
+                          <option value="New York">New York</option>
+                          <option value="California">California</option>
+                          <option value="Seattle">Seattle</option>
+                          <option value="Washington">Washington</option>
+                          <option value="Oregon">Oregon</option>
+                          <option value="Kentucky">Kentucky</option>
+                          <option value="Illinois">Illinois</option>
+                          <option value="Cincinnati">Cincinnati</option>
+                          <option value="San Francisco">San Francisco</option>
+                          <option value="San Diego">San Diego</option>
+                          <option value="Boston">Boston</option>
+                          <option value="Michigan">Michigan</option>
+                          <option value="Massechusets">Massechusets</option>
+                          <option value="Ohio">Ohio</option>
+                      </select>
+                  </div>
+
+                  <div class="destination">
+                      <span>Select Destination:</span>
+                      <select name="origin" id="origin">
+                          <option value="Arizona">Arizona</option>
+                          <option value="Texas">Texas</option>
+                          <option value="New York">New York</option>
+                          <option value="California">California</option>
+                          <option value="Seattle">Seattle</option>
+                          <option value="Washington">Washington</option>
+                          <option value="Oregon">Oregon</option>
+                          <option value="Kentucky">Kentucky</option>
+                          <option value="Illinois">Illinois</option>
+                          <option value="Cincinnati">Cincinnati</option>
+                          <option value="San Francisco">San Francisco</option>
+                          <option value="San Diego">San Diego</option>
+                          <option value="Boston">Boston</option>
+                          <option value="Michigan">Michigan</option>
+                          <option value="Massechusets">Massechusets</option>
+                          <option value="Ohio">Ohio</option>
+                      </select>
+                  </div>
+              </div>
+              <p class="p2">Fill Your Ticket details</p>
+              <input type="radio" name="trip" class="check-box" id="trip"
+                  required>&nbsp;<span>One-way</span>&nbsp;&nbsp;&nbsp;&nbsp;
+              <input type="radio" name="trip" class="check-box" id="trip">&nbsp;<span>Round-trip &nbsp;
+                  (40%off)</span><br>
+              <div class="ticket-quantity">
+                  <label for="">Please Select the tickets: &nbsp;&nbsp;</label>
+                  <input type="number" name="qantity" id="quantity" placeholder="1" min="1" max="10">
+              </div>
+              <div class="air-class">
+                  <label for="">Select Class Preference: &nbsp;&nbsp;</label>
+                  <select id="classsection" name="class_preference" required>
+                      <option value="">Choose a Class from the List</option>
+                      <option value="First-class">First-class</option>
+                      <option value="Business-class">Business-class</option>
+                      <option value="Economy-class">Economy-class</option>
+                  </select>
+              </div>
+          </div>
+          <a href="login"  class="btn btn-info mx-2 my-5" id="submit"
+              onclick="submitData()">Proceed Futher &nbsp;&nbsp; &#8594;</a>
+          <a href="index"  class="btn btn-danger mx-5 my-5">Cancel &nbsp;&nbsp; &#8592;</a>
+
+      </div>
+  </section>
+
+<!--<script>
+  function submitData() {
+      var origin = $('#origin').val();
+      var destination = $('#destination').val();
+      var oneway = $('#trip').val();
+      var roundtrip = $('#trip').val();
+      var quantity = $('#quantity').val();
+      var classsection = $('#classsection').val();
+
+      jsonObject={
+          Origin : "",
+          Destination : "",
+          Oneway :"",
+          Roundtrip : "",
+          Quantity : "",
+          Classsection : "",
+      }
+      jsonObject. Origin=origin;
+      jsonObject. Destination=destination;
+      jsonObject.Oneway=trip;
+      jsonObject.Roundtrip=trip;
+      jsonObject.Quantity=quantity;
+      jsonObject.Classsection=classsection;
+
+      var str=JSON.stringify(jsonObject);
+      document.write(str);
+  }
+</script>-->
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins");
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #efefef;
+}
+table,th,td {
+    border: 1px solid black;
+    margin: 5px;
+    text-align: center;
+}
+table{
+position: relative;
+left: 20%;
+top: 10%;
+}
+
+.blank {
+    margin-top: 5%;
+}
+ ul li {
+     list-style-type: none;
+    }
+    .available{
+        align-items: center;
+        text-align: center;
+        
+}

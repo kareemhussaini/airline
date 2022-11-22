@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('');
+}
+.container{
+    background-color: #efefef;
+    position: relative;
+    top: 100px;
+    height: 400px;
+    width: 40%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px  #333;
+
+
+}
+.arrival{
+    display: flex;
+    flex-direction: row;
+}
+.destination{
+    font-size: 18px;
+    margin-left: 35px;
+    margin-bottom: 5px;
+
+}
+h6{
+  font-size: 18px;
+  margin-top: 10px;
+
+}
+p2{
+    /* margin-top: 20px; */
+    position: relative;
+    top: 5px;
+}
+.origin{
+    font-size: 18px;
+    margin-left: 5px;
+
+}
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+    top: 5px;
+}
+.ticket-quantity{
+    margin-top: 25px;
+   cursor: pointer;
+   margin-left: 2px;
+}
+.air-clas{
+    margin-top: 25px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+@media (max-width:1170px){    
+    .container{
+        background-color: #efefef;
+        position: relative;
+        top: 100px;
+        height: 90%;
+        width: 70%;
+        border-radius: 10px;
+    
+    
+    }
+}
+
+@media (max-width:760px){    
+    .container{
+        background-color: #efefef;
+        position: relative;
+        top: 100px;
+        height: 90%;
+        width: 70%;
+        border-radius: 10px;
+    
+    
+    }
+    h3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+        position: relative;
+        top: 5px;
+        font-size: 16px;
+    }
+    h6{
+        font-size: 12px;
+        margin-top: 8px;
+      
+      }
+      p2{
+          /* margin-top: 20px; */
+          position: relative;
+          top: 3px;
+      }
+      .origin{
+          font-size: 12px;
+          margin-left: 5px;
+      
+      }
+      .destination{
+        font-size: 12px;
+        margin-left: 8px;
+        margin-bottom: 0px;
+    
+    }
+    .btn-danger{
+        margin-top: 3px;
+    }
+}
+
+@media (max-width:370px){    
+    .container{
+        background-color: #efefef;
+        position: relative;
+        top: 100px;
+        height: 90%;
+        width: 100%;
+        border-radius: 10px;
+    
+    
+    }
+}
