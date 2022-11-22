@@ -1,26 +1,27 @@
-# airline
-Datbase Management Systems
+# Airline
+Database Management Systems 
+This project is mainly created for the airline ticketing management, as part of this we are creating a website that will help in searching for the flights (oneway and roundtrip) and accordingly selecting the appropriate flight to get it booked. For booking the flight user needs to login if account already exists and if not then user need to signup for the same, we are having specific deals that the user can select and get the discount appropriately.
+To implement this, I have used Node.js Framework with ExpressJS. HTML, CSS for the styling and MYSQL as the database.
+At every page there are queries being run as per the design document shared to validate and display the output required. Few of the sample screenshots are attached for the reference.
+The website runs at the localhost:3000 
+
 --> Install Node.js
-
 --> Install Mysql
-
 --> Install Dependencies
- ###### npm install express ejs
- ###### npm install nodemon --save-dev
- ###### npm install mysql
- ###### npm install bootstrap@5.2.2
- ###### npm install express-handlebars
- ###### npm install dotenv
- ###### npm install body-parser
- ###### npm install -g express-generator
- 
---> Create user identified by some password to access the airline database and run the commands provided in the Mysql.sql file
-
---> Clone the project from the git link 
-
+npm install express ejs
+npm install nodemon --save-dev
+npm install mysql
+npm install bootstrap@5.2.2
+npm install express-handlebars
+npm install dotenv
+npm install body-parser
+npm install -g express-generator
+--> Create user identified by some password to access the airline database and run the commands provided in the sql files
+--> Clone the project from the git link https://github.com/kareemhussaini/airline.git
 --> open the terminal and route to the project folder. From the terminal run 'npm init' so that it would load the modules
-
 --> npm start or node app.js would start loading the webpage on port 3000 of localhost
+
+NOTE: Make sure that you are changing the user credentials and database name accordingly in order to execute the project successfully. Also note that npm modules has to be included before the project execution which can be done using npm init in the root folder of the project
  
 ![index page](https://user-images.githubusercontent.com/36721989/203214946-8c47ed18-d979-4866-b7a3-2c307b328648.png)
 
