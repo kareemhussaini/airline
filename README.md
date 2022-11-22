@@ -1,15 +1,15 @@
 # Airline
 Database Management Systems 
-This project is mainly created for the airline ticketing management, as part of this we are creating a website that will help in searching for the flights (oneway and roundtrip) and accordingly selecting the appropriate flight to get it booked. For booking the flight user needs to login if account already exists and if not then user need to signup for the same, we are having specific deals that the user can select and get the discount appropriately.
-To implement this, I have used Node.js Framework with ExpressJS. HTML, CSS for the styling and MYSQL as the database.
-At every page there are queries being run as per the design document shared to validate and display the output required. Few of the sample screenshots are attached for the reference.
-The website runs at the localhost:3000 
+This project is mainly created for the airline ticketing management, as part of this we are creating a website that will help in searching for the flights (oneway and roundtrip) and accordingly selecting the appropriate flight to get it booked. For booking the flight user needs to login if account already exists and if not then user need to signup for the same, we are having specific deals that the user can select and get the discount appropriately.<br/>
+To implement this, I have used Node.js Framework with ExpressJS. HTML, CSS for the styling and MYSQL as the database.<br/>
+At every page there are queries being run as per the design document shared to validate and display the output required. Few of the sample screenshots are attached for the reference.<br/>
+The website runs at the localhost:3000 <br/>
 
---> Install Node.js
---> Install Mysql
---> Install Dependencies
-npm install express ejs
-npm install nodemon --save-dev
+--> Install Node.js<br/>
+--> Install Mysql<br/>
+--> Install Dependencies<br/>
+npm install express ejs<br/>
+npm install nodemon --save-dev<br/>
 npm install mysql
 npm install bootstrap@5.2.2
 npm install express-handlebars
