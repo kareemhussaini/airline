@@ -22,3 +22,5 @@ Datbase Management Systems
 
 --> npm start or node app.js would start loading the webpage on port 3000 of localhost
  
+![index page](https://user-images.githubusercontent.com/36721989/203214946-8c47ed18-d979-4866-b7a3-2c307b328648.png)
+![sample validation](https://user-images.githubusercontent.com/36721989/203214964-4c6e3689-8ffa-4682-8b13-4d2b64f7740e.png)
